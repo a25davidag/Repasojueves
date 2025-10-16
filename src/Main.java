@@ -53,7 +53,7 @@ public class Main {
             n1 = np.nextInt();
             sumador1++;
         }
-        System.out.println("la media es: " + sumador / sumador1);*/
+        System.out.println("la media es: " + sumador / sumador1);
 
 Scanner sm = new Scanner(System.in);
         System.out.println("cuantos numeros quieres poner");
@@ -65,8 +65,13 @@ Scanner sm = new Scanner(System.in);
             System.out.println("Introduce un numero");
             array[i] = sm.nextInt();
         }
-        System.out.println(comprobarNegativo(array));
+        System.out.println(comprobarNegativo(array));*/
 
+
+        double [] salario1 ={123,543534,234,3323,2345,3231,34312,2343,543};
+        double [] salario2 ={234234,3223,432,31,43,5,454,34,2,12,34,54,3};
+
+        System.out.println(sueldoMayor(salario1));
 
     }
 
@@ -96,6 +101,20 @@ Scanner sm = new Scanner(System.in);
 
 return false;
     }
+
+
+public static boolean sueldoMayor(int[] sueldo){
+       double mayorsueldo = 0;
+            for(int i = 0; i < sueldo.length; i++){
+                if(sueldo[i] > mayorsueldo){
+                 mayorsueldo = sueldo[i];
+
+        }
+    }
+return mayorsueldo;
+}
+
+
 }
 
 
